@@ -8,6 +8,16 @@ class PokemonesPage extends BbvaCoreIntlMixin(CellsPage) {
     return 'pokemones-page';
   }
 
+  connectedCallback() {
+    super.connectedCallback();
+
+    // Escuchar el evento de navegación de `PokemonesUi`
+    this.addEventListener('navigate-to-evolution', (e) => {
+      const pokemonName = e.detail.pokemonName;
+      this.navigate(`evoluciones/${pokemonName}`);
+    });
+  }
+
   _initPage() {
     this.requestUpdate();
   }

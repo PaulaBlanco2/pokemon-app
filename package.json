@@ -8,6 +8,7 @@
     "web"
   ],
   "dependencies": {
+    "@pokedex/evolucion-ui": "git@github.com:PaulaBlanco2/evolucion-ui.git#main",
     "@cells-demo/demo-data-dm": "^1.0.0",
     "@cells-demo/demo-detail-container": "^1.0.0",
     "@cells-demo/demo-header-container": "^1.0.0",
